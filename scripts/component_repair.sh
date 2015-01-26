@@ -1,7 +1,7 @@
 #!/bin/sh
 
 bx_standart_repair(){
-    cp  -rn ~/consoleJedi/data/bx-components/mscoder/standard.elements ./
+    cp  -rn ~/phpStorm_bitrix_paramsGenerator/data/bx-components/mscoder/standard.elements ./
 }
 
 

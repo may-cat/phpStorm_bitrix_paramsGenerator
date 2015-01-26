@@ -4,9 +4,9 @@ folder=${PWD##*/}
 curpath=${PWD}
 lb=$'\n'
 
-source ~/consoleJedi/scripts/component_repair.sh
-source ~/consoleJedi/scripts/component_loc.sh
-source ~/consoleJedi/scripts/component_params.sh
+source ~/phpStorm_bitrix_paramsGenerator/scripts/component_repair.sh
+source ~/phpStorm_bitrix_paramsGenerator/scripts/component_loc.sh
+source ~/phpStorm_bitrix_paramsGenerator/scripts/component_params.sh
 
 #
 # Функция перехода к корневой папке

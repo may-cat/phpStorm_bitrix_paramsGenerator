@@ -15,12 +15,12 @@ bx_params_parse(){
     # Оставляем из них только уникальные
     unique=( `echo ${params[@]} | tr ' ' '\n' | "C:\Program Files (x86)\Git\bin\sort.exe" -u` )
     # И начинаем формировать файл
-    cat ~/consoleJedi/data/component-params/beginning.txt > ".parameters.php"
+    cat ~/phpStorm_bitrix_paramsGenerator/data/component-params/beginning.txt > ".parameters.php"
     for i in "${unique[@]}"
     do
-        str=$( sed s/#CODE#/$i/ <~/consoleJedi/data/component-params/body.txt )
+        str=$( sed s/#CODE#/$i/ <~/phpStorm_bitrix_paramsGenerator/data/component-params/body.txt )
         echo $str >> ".parameters.php"
     done
-    cat ~/consoleJedi/data/component-params/end.txt >> ".parameters.php"
+    cat ~/phpStorm_bitrix_paramsGenerator/data/component-params/end.txt >> ".parameters.php"
 }
 

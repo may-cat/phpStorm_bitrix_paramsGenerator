@@ -4,5 +4,5 @@
 # Вычленение локализации
 bx_localize_parse(){
     echo "LOCALIZE"
-    /z/usr/bin/php.exe -q ~/consoleJedi/scripts/extract.php `pwd`
+    /z/usr/bin/php.exe -q ~/phpStorm_bitrix_paramsGenerator/scripts/extract.php `pwd`
 }
